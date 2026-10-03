@@ -1,4 +1,4 @@
-name: Auto Deploy to Linode
+name: Auto Deploy to Lightsail
 
 on:
   push:
@@ -19,4 +19,5 @@ jobs:
           script: |
             cd /opt/clickmart/Django_clickmart
             git pull origin main
+            cd django_clickmart_
             docker compose up --build -d
