@@ -1,4 +1,4 @@
-name: Auto Deploy to Linode
+name: Test Workflow
 
 on:
   push:
@@ -6,17 +6,8 @@ on:
       - main
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.LINODE_HOST }}
-          username: ${{ secrets.LINODE_USER }}
-          key: ${{ secrets.LINODE_SSH_KEY }}
-          script: |
-            cd /opt/clickmart
-            git pull origin main
-            docker compose up --build -d
+      - name: Test
+        run: echo "GitHub Actions is working"
