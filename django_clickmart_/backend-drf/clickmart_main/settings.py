@@ -31,7 +31,9 @@ ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'http://3.106.232.226:5173'
+    'http://3.106.232.226:5173',
+    'http://cruxio.shop',
+    'https://cruxio.shop',
 ]
 
 # Application definition
