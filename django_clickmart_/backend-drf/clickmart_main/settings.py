@@ -34,6 +34,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://3.106.232.226:5173',
     'http://cruxio.shop',
     'https://cruxio.shop',
+    'www.cruxio.shop'
 ]
 
 # Application definition
